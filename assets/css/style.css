@@ -4,11 +4,23 @@
     box-sizing: border-box;
 }
 
-header nav{
-    height: 50px;
-    border: 1px solid black;
+body{
+    background-image: url("../images/wood.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+header h1{
+    font-weight: 900;
+    font-size: 48px;
+
+}
+
+header nav{
+    
+    border: 1px solid black;
+    display: inline;
+}
 
 
 header nav ul {
@@ -16,9 +28,19 @@ header nav ul {
     flex-wrap: wrap;
     justify-content: flex-end;
     list-style: none;
-    padding:  10px;
+    
+
   }
 
 header nav ul a{
+    font-size: x-large;
     margin: 0 20px;
+}
+
+.hero{
+    height: 250px;
+    width: 100%;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
 }
