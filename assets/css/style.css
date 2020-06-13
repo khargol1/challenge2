@@ -24,8 +24,6 @@ body{
 header h1{
     font-weight: 900;
     font-size: 48px;
-    
-
 }
 
 header nav{
@@ -40,8 +38,6 @@ header nav ul {
     flex-wrap: wrap;
     justify-content: flex-end;
     list-style: none;
-    
-
   }
 
 header nav ul a{
@@ -166,8 +162,6 @@ header nav ul a{
     align-items: flex-start;
 }
 
-
-
 .item-3, .item-4, .item-5{
     background-color: white;
 
@@ -247,8 +241,6 @@ header nav ul a{
         font-size: 36px;
     }
 
- 
-
     .hero h2{
         font-size: large;
         padding-bottom: 20px;
@@ -314,9 +306,7 @@ header nav ul a{
     .hero h2{
         font-size: large;
         padding-bottom: 20px;
-        position: relative;
-
-                
+        position: relative; 
     }
 
     .about-title{
