@@ -12,6 +12,7 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: cursive;
 }
 
 body{
@@ -23,6 +24,7 @@ body{
 header h1{
     font-weight: 900;
     font-size: 48px;
+    
 
 }
 
@@ -53,39 +55,58 @@ header nav ul a{
     background-image: url("../images/background.jpg");
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+     
+}
+
+.hero h2{
+    font-size: 36px;  
+    
 }
 
 .about {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
+
 .about-title{
-    border-right: 10px solid red;
+    border-right: 4px solid teal;
     padding: 10px 0;
     font-size: 36px;
     width: 20%;
+    margin: 15px 0;
 }
 
-.about p{
-    margin: 20px;
-    padding-bottom: 20px;
+.about-text{
+    width: 70%;
+}
+
+.about-text p{
+    font-size: 20px;
+    margin-top: 1rem;
 }
 
 .about img{
     padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
 }
 
 .projects{
     display: flex;
     flex-wrap: wrap;
     
-    
 }
 
 .work-title{
-    border-right: 10px solid blue;
+    border-right: 4px solid teal;
     padding: 10px 0;    
     width: 20%;
 
@@ -117,11 +138,11 @@ header nav ul a{
 .grid-item{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     border: 5px solid rgba(0, 0, 0, .2);
     border-radius: 5px;
     font-size: 30px;
-    background-color: lime;
+    
     height: 100px;
     width: 200px;
 }
@@ -131,6 +152,25 @@ header nav ul a{
     grid-row: span 2;
     height: auto;
     width: auto;
+    background-image: url("../images/run-buddy.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.item-2{
+    background-image: url("../images/horiseon.jpg");
+    background-size: cover;
+    background-position: center;
+    color: lightsteelblue;
+    align-items: flex-start;
+}
+
+
+
+.item-3, .item-4, .item-5{
+    background-color: white;
+
 }
 
 .contact-info{
@@ -138,6 +178,8 @@ header nav ul a{
 }
 .contact-head{
     width: 20%;
+    border-right: 4px solid teal;
+    margin: 15px 0;
 }
 
 .contact-head h2{
@@ -152,4 +194,182 @@ header nav ul a{
 
 .wrapper-large p{
     font-size: 32px;
+}
+
+
+@media screen and (max-width: 1024px){
+
+    .hero h2{
+        font-size: x-large;
+    }
+
+    .about-title{
+        font-size: 20px;
+        margin-left: 10px;
+
+    }
+
+    .about-title img{
+        height: 150px;
+        width: 150px;
+        margin: auto; 
+    }
+
+    .work-title h2{
+        font-size: 28px;
+    }
+
+    .contact-head h2{
+        font-size: 18px;
+    }
+    
+    .about-text p{
+        font-size: 16px;
+    }
+    
+    .grid-item{
+        font-size: 22px;
+    }
+
+    .wrapper-large a{
+        font-size: 20px;
+    }
+    
+    .wrapper-large p{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    
+    nav h1{
+        font-size: 36px;
+    }
+
+ 
+
+    .hero h2{
+        font-size: large;
+        padding-bottom: 20px;
+        position: relative;
+
+                
+    }
+
+    .about-title{
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .about-title h2{
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .about-text p{
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .grid-item{
+        height: 80px;
+        width: 160px;
+    }
+
+    .item-1{
+        height: auto;
+        width: auto;
+    }
+
+    .about-title img{
+        height: 120px;
+        width: 120px;
+        margin: auto; 
+    }
+
+    .wrapper-large a{
+        font-size: 14px;
+    }
+    
+    .wrapper-large p{
+        font-size: 14px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 375px){
+    
+    nav h1{
+        font-size: 20px;
+    }
+
+    nav ul li a{
+        font-size: 12px;
+    }
+ 
+
+    .hero h2{
+        font-size: large;
+        padding-bottom: 20px;
+        position: relative;
+
+                
+    }
+
+    .about-title{
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .about-title h2{
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .about-text p{
+        font-size: 8px;
+        padding: 0;
+    }
+
+    .work-title h2{
+        font-size: 14px;
+    }
+
+    .grid-item{
+        height: 30px;
+        width: 60px;
+        font-size: 12px;
+    }
+
+    .item-1{
+        height: auto;
+        width: auto;
+    }
+
+    .item-3, .item-4, .item-5{
+        font-size: 8px;
+    }
+
+    .about-title img{
+        height: 55px;
+        width: 55px;
+        margin: auto; 
+    }
+
+    .contact-head h2{
+        font-size: 11px;
+    }
+
+    .wrapper-large a{
+        font-size: 8px;
+    }
+    
+    .wrapper-large p{
+        font-size: 8px;
+    }
+
+
 }
