@@ -162,8 +162,16 @@ header nav ul a{
     align-items: flex-start;
 }
 
-.item-3, .item-4, .item-5{
+.item-3 {
+    background-image: url("../images/movie.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.item-4, .item-5{
     background-color: white;
+    
+
 
 }
 
